@@ -179,6 +179,10 @@ accelerate launch --config_file path/to/your/accelerate_config --main_process_po
 [Will be released once we finished our code transition to OpenRLHF]
 
 
+## 📊 Evaluation
+
+Please refer to [evaluation/eval.md](evaluation/eval.md) for more details.
+
 ## 📖 Citation
 ```
 @article{yang2025mmada,
