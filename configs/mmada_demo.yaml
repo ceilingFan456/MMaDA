@@ -14,7 +14,7 @@ model:
         vq_model_name: "showlab/magvitv2"
 
     mmada:
-        pretrained_model_path: "Gen-Verse/MMaDA-8B-Base"
+        pretrained_model_path: "Gen-Verse/MMaDA-8B-MixCoT"
         w_clip_vit: False
         new_vocab_size: 134656
         llm_vocab_size: 126464
