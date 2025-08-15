@@ -1420,8 +1420,8 @@ flash_vl = {
 mmada = {
     "MMaDA-MixCoT": partial(
         MMaDA, 
-        model_path="Gen-Verse/MMaDA-MixCoT",
-        tokenizer_path="/Gen-Verse/MMaDA-MixCoT",
+        model_path="Gen-Verse/MMaDA-8B-MixCoT",
+        tokenizer_path="/Gen-Verse/MMaDA-8B-MixCoT",
         vq_model_path="showlab/magvitv2",
         vq_model_type="magvitv2",
         resolution=512,
