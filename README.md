@@ -28,7 +28,13 @@
         alt="MMaDA on Hugging Face"
     />
   </a>
-  
+  </a>
+    <a href="https://github.com/Gen-Verse/dLLM-RL">
+    <img 
+        src="https://img.shields.io/badge/RL%20Infra-TraceRL%20Framework-pink?logo=huggingface&logoColor=brown" 
+        alt="MMaDA on Hugging Face"
+    />
+  </a>  
 </p>
 
 
@@ -64,6 +70,7 @@ We demonstrate the decoding process of MMaDA with a teaser video to show how a d
 </div> -->
 
 ## 📰 Latest Updates
+* **[2025-09-09]** We open source a comprehensive RL framework for diffusion language model, [dLLM-RL](https://github.com/Gen-Verse/dLLM-RL), which also supports post-training our MMaDA model. 
 * **[2025-06-02]** We open source our **MMaDA-8B-MixCoT** at [Huggingface](https://huggingface.co/Gen-Verse/MMaDA-8B-MixCoT). 
 * **[2025-05-24]** We add support for MPS inference, tested on M4.
 * **[2025-05-22]** We release the inference and training code of MMaDA for text generation, multimodal generation and image generation. 
