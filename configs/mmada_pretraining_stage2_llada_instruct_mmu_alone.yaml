@@ -59,7 +59,7 @@ dataset:
         persistent_workers: True
 
     preprocessing:
-        max_seq_length: 256 # for text tokens
+        max_seq_length: 128 # for text tokens
         resolution: 256
         center_crop: False
         random_flip: False
@@ -73,6 +73,7 @@ optimizer:
         beta2: 0.999
         weight_decay: 0.01
         epsilon: 1e-8
+        foreach: False
 
 lr_scheduler:
     scheduler: "cosine"
@@ -82,11 +83,11 @@ lr_scheduler:
         min_lr_scale: 0.1
 
 training:
-    gradient_accumulation_steps: 2
+    gradient_accumulation_steps: 4
     noise_type: "mask"
     batch_size_t2i: 0
     batch_size_lm: 0
-    batch_size_mmu: 3
+    batch_size_mmu: 1
     mixed_precision: "bf16"
     enable_tf32: True
     seed: 10086

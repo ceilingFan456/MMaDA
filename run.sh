@@ -34,11 +34,16 @@ accelerate launch \
     config=configs/mmada_pretraining_stage2_llada_instruct_mmu_alone.yaml
 
 # accelerate launch \
-#     --config_file=accelerate_configs/1_node_4_gpus_deepspeed_zero2.yaml \
+#     --config_file=accelerate_configs/1_node_4_gpus_deepspeed_zero3.yaml \
 #     --main_process_port=29500 \
 #     training/train_mmada_stage2_mmu_alone.py \
 #     config=configs/mmada_pretraining_stage2_llada_instruct_mmu_alone.yaml
 
+# accelerate launch \
+#     --config_file=/home/azureuser/MMaDA/accelerate_configs/1_gpu.yaml \
+#     --main_process_port=29500 \
+#     training/train_mmada_stage2_mmu_alone.py \
+#     config=configs/mmada_pretraining_stage2_llada_instruct_mmu_alone.yaml
 # python - <<'PY'
 # import wandb
 # run = wandb.init(entity="ceilingfan", project="mmada-training-stage2")

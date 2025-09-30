@@ -696,8 +696,7 @@ def main():
                 if (global_step + 1) % config.experiment.save_every == 0:
                     save_checkpoint(model, config, accelerator, global_step + 1, uni_prompting)
 
-                if ((global_step + 1) % config.experiment.generate_every == 0 or global_step == 0) and accelerator.is_main_process:
-                    pass
+                # if ((global_step + 1) % config.experiment.generate_every == 0 or global_step == 0) and accelerator.is_main_process:
                     # generate_images(
                     #     model,
                     #     vq_model,
